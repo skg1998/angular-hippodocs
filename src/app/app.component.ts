@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+
+files: File[] = [];
+
+onSelect(event) {
+  console.log(event);
+  this.files.push(...event.addedFiles);
+}
+ 
+onRemove(event) {
+  console.log(event);
+  this.files.splice(this.files.indexOf(event), 1);
+}
 }
