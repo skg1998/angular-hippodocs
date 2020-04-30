@@ -1,0 +1,124 @@
+.banner{
+  background: #4C3986;
+  box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 8px;
+}
+
+.banner .header{
+  text-align: center;
+  color: #eee;
+}
+
+.banner img{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #FFFFFF;
+}
+.banner-middle .avatar{
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.banner .banner-middle{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  color: #F9F9F9;
+}
+
+.banner .logout-btn{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  color: #FF6464;
+}
+
+.banner #time{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0px;
+/* display: flex; */
+  align-items: center;
+  color: #F9F9F9;
+}
+
+.banner #date{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0px;
+/* identical to box height */
+
+/* display: flex; */
+  align-items: center;
+  color: #F9F9F9;
+}
+
+.main-heading{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #4A4A4A;
+}
+
+.para{
+  font-family: Lato;
+  font-style: normal;
+  /* font-weight: bold; */
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #4A4A4A;
+
+}
+
+
+section {
+    padding: 60px 0;
+}
+
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    /* border-color: transparent transparent #f3f3f3; */
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    /* color: #eee; */
+    font-size: 20px;
+}
+
+#term{
+   font-family: Lato;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 10px;
+   line-height: 12px;
+   text-align: center;
+   color: #4A4A4A;
+}
