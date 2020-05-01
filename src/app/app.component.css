@@ -160,6 +160,28 @@ section {
 .dropzone{
   background: #E8F2F7;
   border-radius: 8px;
-  margin: 40px;
+  /* margin: 40px; */
+}
+
+.upload-button{
+  background: #4C3986;
+  border-radius: 8px 0px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+}
+
+.delete-button{
+  position: absolute;
+  background: #FAFAFA;
+
+  border-radius: 0px 8px;
+  bottom: 0;
 }
 

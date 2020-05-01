@@ -36,16 +36,19 @@
                 </div>
               </nav>
               <div class="card mt-5 main-part">
-                <div class="card-body tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <ngx-dropzone class="dropzone" (change)="onSelect($event)">
+                <div class="card-body tab-content p-0" id="nav-tabContent">
+                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                   <button type="button" class="btn upload-button">Upload File</button>
+                   <ngx-dropzone class="dropzone" (change)="onSelect($event)">
                         <ngx-dropzone-label>Upload file</ngx-dropzone-label>
                         <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
                             <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
                         </ngx-dropzone-preview>
                     </ngx-dropzone>
+                    <button type="button" class="btn delete-button"><i class="fa fa-trash" aria-hidden="true"></i></button>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <button type="button" class="btn upload-button">Request API Key</button>
                   Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
                 </div>
                 
