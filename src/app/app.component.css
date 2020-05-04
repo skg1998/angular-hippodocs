@@ -27,6 +27,15 @@
     border-radius: 50%;
 }
 
+.banner-middle{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .banner .banner-middle{
   font-family: Lato;
   font-style: normal;
@@ -82,7 +91,7 @@
   color: #F9F9F9;
 }
 
-.main-heading{
+.main-heading h6{
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
@@ -92,7 +101,7 @@
   color: #4A4A4A;
 }
 
-.para{
+.para p{
   font-family: Lato;
   font-style: normal;
   /* font-weight: bold; */
