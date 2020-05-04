@@ -9,10 +9,11 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { RestApiComponent } from './rest-api/rest-api.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,NgxDropzoneModule ,FontAwesomeModule,TabModule],
-  declarations: [ AppComponent, HelloComponent, FileUploadComponent, RestApiComponent ],
+  declarations: [ AppComponent, HelloComponent, FileUploadComponent, RestApiComponent, StepperComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

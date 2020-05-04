@@ -42,6 +42,8 @@
   line-height: 19px;
   color: #4C3986
 }
+
+
 .main-part{
   height: 290px;
   background: #E8F2F7;
@@ -62,16 +64,12 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
-
-
   color: #FFFFFF;
 }
 
 .delete-button{
   position: absolute;
   background: #FAFAFA;
-
   border-radius: 0px 8px;
   bottom: 0;
 }
