@@ -14,12 +14,12 @@
   color: #eee;
 }
 
-.banner img{
+/* .banner img{
   position: absolute;
   width: 80px;
   height: 80px;
   background: #FFFFFF;
-}
+} */
 .banner-middle .avatar{
     vertical-align: middle;
     width: 80px;
@@ -36,6 +36,7 @@
   align-items: center;
   color: #F9F9F9;
 }
+
 
 .banner .banner-bottom{
   position: absolute;

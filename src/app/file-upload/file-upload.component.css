@@ -55,6 +55,9 @@
   border-radius: 8px;
   margin: 20px 50px;
 }
+.drop-img{
+  display: grid;
+}
 
 .upload-button{
   background: #4C3986;

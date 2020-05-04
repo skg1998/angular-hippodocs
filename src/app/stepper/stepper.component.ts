@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Stepper from 'bs-stepper';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-stepper',
@@ -10,26 +10,8 @@ export class StepperComponent implements OnInit {
 
   constructor() { }
 
-  private stepper: Stepper;
-
-  next() {
-    this.stepper.next();
-  }
-
-  onSubmit() {
-    return false;
-  }
-
   ngOnInit() {
-      this.stepper = new Stepper(document.querySelector('#stepper1'), {
-      linear: false,
-      animation: true,
-      selectors: {
-        steps: '.step',
-        trigger: '.step-trigger',
-        stepper: '.bs-stepper'
-      }
-    })
+
   }
 
 }
