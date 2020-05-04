@@ -1,6 +1,7 @@
-<div class="container m-3">
+<ng-container>
+<div class=" m-3">
   <div class="row m-0">
-    <div class="col-md-3 text-center p-3 banner">
+    <div class="col-md-2 text-center p-3 banner">
       <div class="header">
         <h5>HippoDocs</h5>
       </div>
@@ -17,51 +18,20 @@
     </div>
     <div class="col-md-1"></div>
     <div class=" col-md-8">
-      <div class="center main-heading mt-3">
-        <h6>Welcome To Your Dashboard</h6>
-      </div>
       <div>
-        <p class="para"><b>HippoDocs</b> is a PDF Conversion API for dynamic generation of PDF from system provided or user provided templates. Here you can take a look at your statistics & have short-links to frequent actions. You can also access functions in HippoPDF web application.
-        </p>
-      </div>
-
-      <section id="tabs">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 ">
-              <nav>
-                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active convert-document" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">CONVERT DOCUMENT</a>
-                  <a class="nav-item nav-link api-key" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">REQUEST API KEY</a>
-                </div>
-              </nav>
-              <div class="card mt-5 main-part">
-                <div class="card-body tab-content p-0" id="nav-tabContent">
-                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                   <button type="button" class="btn upload-button">Upload File</button>
-                   <ngx-dropzone class="dropzone" (change)="onSelect($event)">
-                        <ngx-dropzone-label>Upload file</ngx-dropzone-label>
-                        <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
-                            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
-                        </ngx-dropzone-preview>
-                    </ngx-dropzone>
-                    <button type="button" class="btn delete-button"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <button type="button" class="btn upload-button">Request API Key</button>
-                  Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-                </div>
-                
-              </div>
-              </div>
-            
-            </div>
+          <div class="center main-heading mt-3">
+            <h6>Welcome To Your Dashboard</h6>
           </div>
-        </div>
-      </section>
+          <div>
+            <p class="para"><b>HippoDocs</b> is a PDF Conversion API for dynamic generation of PDF from system provided or user provided templates. Here you can take a look at your statistics & have short-links to frequent actions. You can also access functions in HippoPDF web application.
+            </p>
+          </div>
+      </div>
+      <app-file-upload></app-file-upload>
 
     <p id="term">TERMS & CONDITIONS | FAQ | CONTACT US | SITE MAP | ABOUT US</p>
 
     </div>
   </div>
 </div>
+</ng-container>
