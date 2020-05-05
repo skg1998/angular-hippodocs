@@ -69,6 +69,7 @@
   background: #FAFAFA;
   border-radius: 0px 8px;
   bottom: 0;
+  left: 0px;
 }
 
 
@@ -81,8 +82,10 @@
     background-repeat: no-repeat;
 }
 
-.drop-button img{
+.drop-button button{
   position: absolute;
+  background: #4C3986;
+  border-radius: 8px 0px;
   right: 0px;
   bottom: 0px;
 }
