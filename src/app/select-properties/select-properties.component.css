@@ -147,3 +147,71 @@ hr{
   box-sizing: border-box;
 }
 
+.encrypt-password h6{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ACABB1;
+} 
+
+.encrypt-password hr{
+  /* position: absolute; */
+  width: 260px;
+  height: 1px;
+  background: #ACABB1;
+  border-radius: 5px;
+}
+
+.encrypt-password input{
+  /* position: absolute; */
+  width: 260px;
+  height: 20px;
+  border: 1px solid #ACABB1;
+  box-sizing: border-box;
+  font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 6px;
+line-height: 7px;
+color: #ACABB1;
+}
+
+.watermark label{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ACABB1;
+}
+
+.watermark input{
+  width: 64px;
+  height: 20px;
+  border: 1px solid #ACABB1;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.watermark h6{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ACABB1;
+} 
+
+.watermark hr{
+  /* position: absolute; */
+  width: 260px;
+  height: 1px;
+  background: #ACABB1;
+  border-radius: 5px;
+}
+
+.display{
+  display: flex;
+}
