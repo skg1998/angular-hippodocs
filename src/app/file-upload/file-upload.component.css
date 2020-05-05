@@ -77,8 +77,20 @@
   bottom: 0;
 }
 
+
+.close-CSS{
+     background-image: url( 'https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/garbage.png' );
+    color: #4C3986;
+    background-size: 20px 18px;
+    height: 48px;  
+    width: 64px;
+    background-repeat: no-repeat;
+}
+
 .drop-button img{
   position: absolute;
   right: 0px;
+  bottom: 0px;
 }
+   
 

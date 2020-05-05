@@ -1,0 +1,36 @@
+.row{
+  width: 100%;
+}
+
+.vertical .bs-stepper-pane.fade.dstepper-none, .vertical .content.fade.dstepper-none {
+    visibility: hidden;
+    display: none;
+}
+
+.bs-stepper .step-trigger {
+    
+    align-items: center;
+    padding: 0px;
+    font-size: 1rem; 
+    font-weight: 700; 
+    line-height: 1.5;
+    color: #6c757d;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-radius: .25rem;
+}
+
+.bs-stepper-content {
+    padding: 0px;
+}
+
+.bs-stepper-header {
+  padding-left: 20px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

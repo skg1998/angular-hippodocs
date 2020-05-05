@@ -1,6 +1,8 @@
 /* Add application styles & imports to this file! */
 /* @import url('https://unpkg.com/bootstrap/dist/css/bootstrap.min.css'); */
 /* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bs-stepper/dist/css/bs-stepper.min.css';
 
 
 
