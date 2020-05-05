@@ -14,12 +14,6 @@
   color: #eee;
 }
 
-/* .banner img{
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  background: #FFFFFF;
-} */
 .banner-middle .avatar{
     vertical-align: middle;
     width: 80px;
@@ -59,7 +53,6 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
-  /* display: flex; */
   align-items: center;
   text-align: center;
   color: #FF6464;
@@ -72,7 +65,6 @@
   font-size: 16px;
   line-height: 19px;
   margin: 0px;
-/* display: flex; */
   align-items: center;
   color: #F9F9F9;
 }
@@ -84,33 +76,10 @@
   font-size: 12px;
   line-height: 14px;
   margin: 0px;
-/* identical to box height */
-
-/* display: flex; */
   align-items: center;
   color: #F9F9F9;
 }
 
-.main-heading h6{
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: #4A4A4A;
-}
-
-.para p{
-  font-family: Lato;
-  font-style: normal;
-  /* font-weight: bold; */
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #4A4A4A;
-
-}
 
 #term{
    font-family: Lato;
@@ -123,5 +92,12 @@
    color: #4A4A4A;
 }
 
+.setting{
+   
+}
+
+#image-setting #setting-text{
+  
+}
 
 

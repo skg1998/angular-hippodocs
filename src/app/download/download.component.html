@@ -12,17 +12,12 @@
                 <div class="card-body tab-content p-0" id="nav-tabContent">
                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                    <button type="button" class="btn btn-lg upload-button">Upload File</button>
-                   <ngx-dropzone class="dropzone" (change)="onSelect($event)">
-                        <ngx-dropzone-label>
-                          <div class="drop-img">
-                            <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/upload.png">
-                          Upload file
-                          </div>
-                          </ngx-dropzone-label>
-                        <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
-                            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
-                        </ngx-dropzone-preview>
-                    </ngx-dropzone>
+                   <div class="download-file text-center">
+                     <h5>Congratulations!</h5>
+                     <p>Your file(s) have been converted. You can download the files & restart another conversion process.</p>
+                     <button class="btn btn-secondary">DOWNLOAD</button>
+                   </div>
+
                     <div class="drop-button">
                     <button  type="button" class="btn close-CSS delete-button"></button>
                     <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Ellipse.png">

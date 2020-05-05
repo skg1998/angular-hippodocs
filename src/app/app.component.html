@@ -8,7 +8,10 @@
       <div class="banner-middle ">
         <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Sidebar-User-Icon.png" alt="Avatar" class="avatar">
         <p class="mt-2">Hej, Nivrith!</p>
-        <p>Preferences</p>
+        <div class="setting">
+        <img id="image-setting"src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Vector%20(3).png">
+        <p id="setting-text">Preferences</p>
+        </div>
       </div>
       <div class="banner-bottom">
         <a href="#" class="btn logout-btn" role="button" aria-disabled="true"> <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/logout.png">Logout</a>
@@ -17,18 +20,8 @@
       </div>
     </div>
     <div class=" col-md-9">
-      <div>
-          <div class="center main-heading mt-3">
-            <h6>Welcome To Your Dashboard</h6>
-          </div>
-          <div class="para">
-            <p ><b>HippoDocs</b> is a PDF Conversion API for dynamic generation of PDF from system provided or user provided templates. Here you can take a look at your statistics & have short-links to frequent actions. You can also access functions in HippoPDF web application.
-            </p>
-          </div>
-          <app-stepper></app-stepper>
-           <!-- <app-file-upload></app-file-upload>  -->
-     </div> 
-    <p id="term">TERMS & CONDITIONS | FAQ | CONTACT US | SITE MAP | ABOUT US</p>
+     <app-home-page></app-home-page>
+     <p id="term">TERMS & CONDITIONS | FAQ | CONTACT US | SITE MAP | ABOUT US</p>
     </div>
   </div>
 </div>
