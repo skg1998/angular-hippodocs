@@ -77,3 +77,8 @@
   bottom: 0;
 }
 
+.drop-button img{
+  position: absolute;
+  right: 0px;
+}
+
