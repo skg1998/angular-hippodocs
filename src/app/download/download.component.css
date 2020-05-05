@@ -70,19 +70,12 @@
   border-radius: 0px 8px;
   bottom: 0;
   left: 0px;
+  color: #4C3986;
+  background-size: 20px 18px;
 }
 
 
-.close-CSS{
-     background-image: url( 'https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/garbage.png' );
-    color: #4C3986;
-    background-size: 20px 18px;
-    height: 48px;  
-    width: 64px;
-    background-repeat: no-repeat;
-}
-
-.drop-button button{
+.drop-button .reset-button{
   position: absolute;
   background: #4C3986;
   border-radius: 8px 0px;
