@@ -45,7 +45,7 @@
 
 
 .main-part{
-  height: 290px;
+  height: 325px;
   background: #E8F2F7;
   border-radius: 8px;
 }
@@ -53,7 +53,7 @@
 .dropzone{
   background: #E8F2F7;
   border-radius: 8px;
-  margin: 20px 50px;
+  margin: 30px 60px;
 }
 .drop-img{
   display: grid;
