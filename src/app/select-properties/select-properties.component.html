@@ -15,10 +15,11 @@
                    <button type="button" class="btn btn-lg upload-button">Upload File</button>
 
                    <!-- select-portion-start -->
-                 <form >  
+                 
                    <div class="select-portion ">
+                     <form [formGroup]="myForm" (ngSubmit)="onSubmit()">  
                      <div class="row">
-                       <div class="col-md-6">
+                       <div class="main-col col-md-6">
                          <div class="row">
                            <div class="col-md-2 m-1">
                              <p>Auto</p>
@@ -43,10 +44,11 @@
                              <h6>Encrypt PDF</h6>
                              </div>
                              <hr/>
-                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password for your PDF">
+                             <input type="password" formControlName="password" placeholder="Enter password for your PDF">
                            </div>
                          </div>
                          <div class="row">
+                           <div class="col-md-12">
                            <div class="watermark">
                              <div class="display">
                               <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/lock%201%20(1).png">
@@ -54,29 +56,32 @@
                              </div>
                              <hr/>
                            </div>
-                           <div class="watermark col-md-6">
+                           <div class="row">
+                           <div class="watermark col-md-6 text-center">
                              <div class="display">
-                             <label for="top">Text</label>
-                             <input type="password" class="form-control" id="exampleInputPassword1" >
+                             <label for="top">Text &nbsp; &nbsp;</label>
+                             <input type="text" formControlName="text"  >
                              </div>
                              <div class="display">
-                             <label for="top">Font</label>
-                             <input type="password" class="form-control" id="exampleInputPassword1" >
+                             <label for="top">Font &nbsp; &nbsp;</label>
+                             <input type="text" formControlName="font">
                              </div>
                            </div>
-                           <div class="watermark col-md-6">
+                           <div class="watermark col-md-6 text-center">
                              <div class="display">
-                             <label for="top">Angle</label>
-                             <input type="password" class="form-control" id="exampleInputPassword1" >
+                             <label for="top">Angle &nbsp;</label>
+                             <input type="text" formControlName="angle" >
                              </div>
-                             <div class="display">
+                             <div class="file-upload-button display">
                              <label for="top">Upload</label>
-                             <input type="password" class="form-control" id="exampleInputPassword1" >
+                             <input type="submit" formControlName="upload" >
                              </div>
+                           </div>
                            </div>
                          </div>
                        </div>
-                       <div class="col-md-6">
+                       </div>
+                       <div class="main-col-2 col-md-6">
                          <div class="row">
                            <div class="col-md-6">
                              <p>Header</p>
@@ -109,48 +114,51 @@
                          </div>
                          <div class="row">
                            <div class="col-md-12">
+                             <div class="display">
                              <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/lock%201%20(1).png">
                              <p>Permissions</p>
+                             </div>
                              <hr/>
                              <div class="row">
                                <div class="col-md-4">
                                  <div class="form-check">
                                 <label class="form-check-label" for="check1">
-                                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Page Number
+                                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Copy
+                                  <span class="checkbox-custom"></span>
                                 </label>
                               </div>
                               <div class="form-check">
                                 <label class="form-check-label" for="check2">
-                                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Date
+                                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Print
                                 </label>
                               </div>
                               <div class="form-check">
                                 <label class="form-check-label" for="check2">
-                                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Date
+                                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Asseble
                                 </label>
                               </div>
                                </div>
                                <div class="col-md-4">
                                  <div class="form-check">
                                 <label class="form-check-label" for="check1">
-                                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Page Number
+                                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Modify
                                 </label>
                               </div>
                               <div class="form-check">
                                 <label class="form-check-label" for="check2">
-                                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Date
+                                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Annotation
                                 </label>
                               </div>
                                </div>
                                <div class="col-md-4">
                                  <div class="form-check">
                                 <label class="form-check-label" for="check1">
-                                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Page Number
+                                  <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>Fill Form
                                 </label>
                               </div>
                               <div class="form-check">
                                 <label class="form-check-label" for="check2">
-                                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Date
+                                  <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Extract
                                 </label>
                               </div>
                                </div>
@@ -159,18 +167,19 @@
                          </div>
                        </div>
                      </div>
+                     </form> 
                    </div>
-                 </form> 
+                 
                    <!-- select-portion-end -->
 
                     <div class="drop-button">
-                    <button  type="button" class="btn delete-button">
-                      <img class="p-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/garbage.png">
-                    </button>
-                    
-                    <button class="reset-button">
-                      <img class="p-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/reset.png">
+                      <button  type="button" class="btn delete-button">
+                        <img class="p-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/garbage.png">
                       </button>
+                      
+                      <button class="reset-button">
+                        <img class="p-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/reset.png">
+                        </button>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">

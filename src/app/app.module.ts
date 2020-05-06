@@ -1,6 +1,6 @@
 import { NgModule ,CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule  } from '@angular/forms';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -15,7 +15,7 @@ import { DownloadComponent } from './download/download.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ,NgxDropzoneModule ,FontAwesomeModule,],
+  imports:      [ BrowserModule, FormsModule ,NgxDropzoneModule ,FontAwesomeModule,ReactiveFormsModule ],
   declarations: [ AppComponent, HelloComponent, FileUploadComponent, RestApiComponent, StepperComponent, SelectPropertiesComponent, DownloadComponent, HomePageComponent ],
   bootstrap:    [ AppComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

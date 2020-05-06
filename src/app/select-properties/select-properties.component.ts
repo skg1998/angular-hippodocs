@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 
 @Component({
@@ -8,7 +9,15 @@ import { FormBuilder } from '@angular/forms';
 })
 export class SelectPropertiesComponent implements OnInit {
 
-  constructor() { }
+  myForm = this.fb.group({
+    password:[''],
+    text: [''],
+    font: [''],
+    angle:[''],
+    upload:[''],
+  })
+
+  constructor(private fb: FormBuilder) { };
 
   ngOnInit() {
   }
