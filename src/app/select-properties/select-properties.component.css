@@ -119,6 +119,37 @@
   color: #F9F9F9;
 }
 
+.main-margin-field .margin-field label{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ACABB1;
+  
+}
+
+.main-margin-field .margin-field input{
+  outline: 0;
+  border-width: 0 0 2px;
+  width: 30px;
+  height: 20px;
+  background: #E8F2F7;
+  border: 0;
+  border-bottom: 2px solid #ACABB1;;
+  font-size: 1.4rem;
+}
+
+small{
+  font-family: Lato;
+font-style: italic;
+font-weight: normal;
+font-size: 6px;
+line-height: 7px;
+color: #4C3986;
+}
+
 p{
   font-family: Lato;
   font-style: normal;

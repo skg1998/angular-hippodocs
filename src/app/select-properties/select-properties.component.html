@@ -20,21 +20,87 @@
                      <form [formGroup]="myForm" (ngSubmit)="onSubmit()">  
                      <div class="row">
                        <div class="main-col col-md-6">
-                         <div class="row">
-                           <div class="col-md-2 m-1">
+                         <div class="col-md-12">
+                            <div class="display">
+                                <p>Margin</p>
+                             </div>
+                             <hr/>
+                         <div class="row p-0 mt-3 mb-0">
+                           <div class="col-md-3">
                              <p>Auto</p>
                              <p>Custom</p>
                            </div>
                            <div class="col-md-3">
                              <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Marginbox.png">
                            </div>
-                           <div class="col-md-7">
-                             <!-- <label for="top">Top</label>
-                             <div class="content mt-5 mx-auto">
-                              <input class="input" id="form-one" type="text" placeholder="Login">
-                              <span class="border"></span>
+                           <div class="main-margin-field col-md-6">
+                             <!-- <div class="row"> -->
+                               <!-- <div class="row">
+                                  <div class="margin-field col-md-6">
+                                    <label for="top">Top &nbsp; &nbsp; </label>
+                                  </div>
+                                  <div class="col-md-6">
+                                   <div class="margin-field">
+                                     <input class="input" id="form-one" type="text" placeholder="">
+                                      <small id="Top" class="text-muted">mm</small>
+                                     </div> 
+                                  </div>
+                               </div>
+                               <div class="row">
+                                  <div class="margin-field col-md-6">
+                                    <label for="header">Header </label>
+                                  </div>
+                                  <div class="col-md-6">
+                                   <div class="margin-field">
+                                     <input class="input" id="form-one" type="text" placeholder="">
+                                      <small id="Top" class="text-muted">mm</small>
+                                     </div> 
+                                  </div>
+                               </div>
+                               <div class="row">
+                                  <div class="margin-field col-md-6">
+                                    <label for="footer">Footer</label>
+                                  </div>
+                                  <div class="col-md-6">
+                                   <div class="margin-field">
+                                     <input class="input" id="form-one" type="text" placeholder="">
+                                      <small id="Top" class="text-muted">mm</small>
+                                     </div> 
+                                  </div>
+                               </div>
+                               <div class="row">
+                                  <div class="margin-field col-md-6">
+                                    <label for="bottom">Bottom</label>
+                                  </div>
+                                  <div class="col-md-6">
+                                   <div class="margin-field">
+                                     <input class="input" id="form-one" type="text" placeholder="">
+                                      <small id="Top" class="text-muted">mm</small>
+                                     </div> 
+                                  </div>
+                             </div> -->
+                            <div class="margin-field">
+                              <label for="top">Top &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                              <input class="input" id="form-one" type="text" placeholder="">
+                            <small id="Top" class="text-muted">mm</small>
                             </div>
-                            <small id="Top" class="text-muted">mm</small> -->
+                            <div class="margin-field">
+                              <label for="top">Header &nbsp;</label>
+                              <input class="input" id="form-one" type="text" placeholder="">
+                            <small id="Top" class="text-muted">mm</small>
+                            </div>
+                            <div class="margin-field">
+                              <label for="top">Footer &nbsp;</label>
+                              <input class="input" id="form-one" type="text" placeholder="">
+                            <small id="Top" class="text-muted">mm</small>
+                            </div>
+                            <div class="margin-field">
+                              <label for="top">Bottom &nbsp;</label>
+                              <input class="input" id="form-one" type="text" placeholder="">
+                            <small id="Top" class="text-muted">mm</small>
+                            </div>
+                             <!-- </div> -->
+                           </div>
                            </div>
                          </div>
                          <div class="row">
@@ -47,7 +113,7 @@
                              <input type="password" formControlName="password" placeholder="Enter password for your PDF">
                            </div>
                          </div>
-                         <div class="row">
+                         <div class="row mb-0">
                            <div class="col-md-12">
                            <div class="watermark">
                              <div class="display">
