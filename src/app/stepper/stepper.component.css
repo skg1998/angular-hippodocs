@@ -38,3 +38,7 @@
 .active .bs-stepper-circle {
     background-color: #43d813;
 }
+
+.step-trigger .line{
+  color: #43d813;
+}

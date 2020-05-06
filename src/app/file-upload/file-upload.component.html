@@ -1,7 +1,7 @@
 <div id="tabs">
-        <div class="container">
+        <div class="container p-0">
           <div class="row">
-            <div class="col-md-12 ">
+            <div class="col-md-12 p-0 ">
               <nav>
                 <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active nav-home" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">CONVERT DOCUMENT</a>
@@ -27,8 +27,10 @@
                     <button  type="button" class="btn delete-button">
                       <img class="p-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/garbage.png">
                     </button>
-                    <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Ellipse.png">
-                    <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Group%204.png">
+                    <!-- <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Ellipse.png"> -->
+                    <button class="reset-button " (click)="next()">
+                        <img class="p-1 m-2" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/arrow.png">
+                      </button>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">

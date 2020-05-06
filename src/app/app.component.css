@@ -16,8 +16,8 @@
 
 .banner-middle .avatar{
     vertical-align: middle;
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -93,11 +93,13 @@
 }
 
 .setting{
-   
+   position: relative;
+   display: flex;
 }
 
-#image-setting #setting-text{
-  
+.setting img{
+  height: 15px;
+  margin-right: 5px;
 }
 
 

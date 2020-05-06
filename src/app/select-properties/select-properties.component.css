@@ -60,6 +60,7 @@
 
 .upload-button{
   background: #4C3986;
+  padding: 12px 20px;
   border-radius: 8px 0px;
   font-family: Lato;
   font-style: normal;
@@ -128,6 +129,10 @@
   line-height: 10px;
   color: #ACABB1;
   
+}
+.margin-field{
+  position: relative;
+  float: right;
 }
 
 .main-margin-field .margin-field input{
