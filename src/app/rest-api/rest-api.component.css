@@ -1,0 +1,28 @@
+.main-part{
+  height: 350px;
+  background: #E8F2F7;
+  border-radius: 8px;
+}
+
+.drop-img{
+  display: grid;
+}
+
+.upload-button{
+  background: #4C3986;
+  border-radius: 8px 0px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.drop-button .reset-button{
+  position: absolute;
+  background: #4C3986;
+  border-radius: 8px 0px;
+  right: 0px;
+  bottom: 0px;
+}

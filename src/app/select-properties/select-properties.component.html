@@ -99,7 +99,7 @@
                               <input class="input" id="form-one" type="text" placeholder="">
                             <small id="Top" class="text-muted">mm</small>
                             </div>
-                             <!-- </div> -->
+                             
                            </div>
                            </div>
                          </div>
@@ -242,14 +242,13 @@
                       <button  type="button" class="btn delete-button">
                         <img class="p-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/garbage.png">
                       </button>
-                      
-                      <button class="reset-button">
+                      <button class="reset-button" (click)="next()">
                         <img class="p-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/reset.png">
                         </button>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <button type="button" class="btn upload-button">Request API Key</button>
+                  <app-rest-api></app-rest-api>
                 </div>
               </div>
               </div>

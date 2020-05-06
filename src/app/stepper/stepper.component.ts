@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import Stepper from 'bs-stepper';
+// import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+
 
 @Component({
   selector: 'app-stepper',
@@ -9,7 +11,18 @@ import Stepper from 'bs-stepper';
 })
 export class StepperComponent implements OnInit {
 
-  constructor() { }
+  smallScreen: boolean;
+
+    // constructor(
+    //    private breakpointObserver: BreakpointObserver
+    //   ) {
+    //     breakpointObserver.observe([
+    //       Breakpoints.XSmall,
+    //       Breakpoints.Small
+    //     ]).subscribe(result => {
+    //       this.smallScreen = result.matches;
+    //   });
+    //  }
 
   private stepper: Stepper;
 

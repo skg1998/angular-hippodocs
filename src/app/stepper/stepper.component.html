@@ -1,49 +1,101 @@
-<ng-container>
-  <div id="stepper1" class="bs-stepper linear vertical">
-   <div class="row">
-    <div class="col-md-1">
-    <div class="bs-stepper-header " role="tablist">
-      <div class="step" data-target="#test-l-1">
-        <button class="step-trigger">
-          <span class="bs-stepper-circle">1</span>
-        </button>
+<ng-container >
+    <div id="stepper1" class="bs-stepper linear vertical">
+    <div class="row">
+      <div class="col-md-1">
+      <div class="bs-stepper-header " role="tablist">
+        <div class="step" data-target="#test-l-1">
+          <button class="step-trigger">
+            <span class="bs-stepper-circle">1</span>
+          </button>
+        </div>
+        <div class="line"></div>
+        <div class="step" data-target="#test-l-2">
+          <button class="step-trigger">
+            <span class="bs-stepper-circle">2</span>
+          </button>
+        </div>
+        <div class="line"></div>
+        <div class="step" data-target="#test-l-3">
+          <button class="step-trigger">
+            <span class="bs-stepper-circle">3</span>
+          </button>
+        </div>
       </div>
-      <div class="line"></div>
-      <div class="step" data-target="#test-l-2">
-        <button class="step-trigger">
-          <span class="bs-stepper-circle">2</span>
-        </button>
       </div>
-      <div class="line"></div>
-      <div class="step" data-target="#test-l-3">
-        <button class="step-trigger">
-          <span class="bs-stepper-circle">3</span>
-        </button>
-      </div>
-    </div>
-    </div>
-  <div class="col-md-11">
-    <div class="  bs-stepper-content">
-      <form class="" (ngSubmit)="onSubmit()">
-        <div id="test-l-1" class="content">
-          <div class="form-group">
-            <app-file-upload></app-file-upload> 
+    <div class="col-md-11">
+      <div class="  bs-stepper-content">
+        <form class="" (ngSubmit)="onSubmit()">
+          <div id="test-l-1" class="content">
+            <div class="form-group">
+              <app-file-upload></app-file-upload> 
+            </div>
+            <button (click)="next()" class="btn btn-primary">Next</button>
           </div>
-          <button (click)="next()" class="btn btn-primary">Next</button>
-        </div>
-        <div id="test-l-2" class="content">
-          <div class="form-group">
-            <app-select-properties></app-select-properties> 
+          <div id="test-l-2" class="content">
+            <div class="form-group">
+              <app-select-properties></app-select-properties> 
+            </div>
+            <button (click)="next()" class="btn btn-primary">Next</button>
           </div>
-          <button (click)="next()" class="btn btn-primary">Next</button>
-        </div>
-        <div id="test-l-3" class="content">
-           <app-download></app-download> 
-          <button type="submit" class="btn btn-primary mt-5">Submit</button>
-        </div>
-      </form>
+          <div id="test-l-3" class="content">
+            <app-download></app-download> 
+            <button type="submit" class="btn btn-primary mt-5">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-   </div>
-  </div>
+    </div>
+    </div>
+
+
+    <!-- <ng-template #smallScreen>
+    <div id="stepper1" class="bs-stepper linear horizontal">
+    <div class="row">
+      <div class="col-md-1">
+      <div class="bs-stepper-header " role="tablist">
+        <div class="step" data-target="#test-l-1">
+          <button class="step-trigger">
+            <span class="bs-stepper-circle">1</span>
+          </button>
+        </div>
+        <div class="line"></div>
+        <div class="step" data-target="#test-l-2">
+          <button class="step-trigger">
+            <span class="bs-stepper-circle">2</span>
+          </button>
+        </div>
+        <div class="line"></div>
+        <div class="step" data-target="#test-l-3">
+          <button class="step-trigger">
+            <span class="bs-stepper-circle">3</span>
+          </button>
+        </div>
+      </div>
+      </div>
+    <div class="col-md-11">
+      <div class="  bs-stepper-content">
+        <form class="" (ngSubmit)="onSubmit()">
+          <div id="test-l-1" class="content">
+            <div class="form-group">
+              <app-file-upload></app-file-upload> 
+            </div>
+            <button (click)="next()" class="btn btn-primary">Next</button>
+          </div>
+          <div id="test-l-2" class="content">
+            <div class="form-group">
+              <app-select-properties></app-select-properties> 
+            </div>
+            <button (click)="next()" class="btn btn-primary">Next</button>
+          </div>
+          <div id="test-l-3" class="content">
+            <app-download></app-download> 
+            <button type="submit" class="btn btn-primary mt-5">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    </div>
+    </ng-template> -->
 </ng-container>
+
