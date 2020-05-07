@@ -7,10 +7,30 @@
   background: #4C3986;
   box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.25);
   border-radius: 0px 8px;
+  margin: 0;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .banner a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .banner a {
+    text-align: center;
+    float: none;
+  }
 }
 
 .banner .header{
-  text-align: center;
+  width: 100%;
+  /* text-align: center; */
   color: #eee;
 }
 
