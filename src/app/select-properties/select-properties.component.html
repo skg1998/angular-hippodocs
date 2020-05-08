@@ -20,37 +20,40 @@
                      <form [formGroup]="myForm" (ngSubmit)="onSubmit()">  
                      <div class="row">
                        <div class="main-col col-md-6">
-                         <div class="col-md-12">
+                         <div class="col-md-12 p-0">
                             <div class="display">
-                                <p>Margin</p>
+                                <p id="margin-para">Margin</p>
                              </div>
                              <hr/>
-                         <div class="row p-0 mt-3 mb-0">
-                           <div class="col-md-3">
-                             <p>Auto</p>
+                         <div class="row p-0 mt-3 mb-3">
+                           <div class="margin-properties col-md-3">
+                             <p class="p-3" id="margin-unselection">Auto</p>
+                             <div class="margin-selection">
+                               <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Polygon.png">
                              <p>Custom</p>
+                             </div>
                            </div>
-                           <div class="col-md-3">
+                           <div class="document-img col-md-4">
                              <img src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Marginbox.png">
                            </div>
-                           <div class="main-margin-field col-md-6">
+                           <div class="main-margin-field col-md-5">
                             <div class="margin-field">
-                              <label for="top">Top &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                              <label for="top">Top &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
                               <input class="input" id="form-one" type="text" placeholder="">
                             <small id="Top" class="text-muted">mm</small>
                             </div>
                             <div class="margin-field">
-                              <label for="top">Header &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                              <label for="top">Header &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
                               <input class="input" id="form-one" type="text" placeholder="">
                             <small id="Top" class="text-muted">mm</small>
                             </div>
                             <div class="margin-field">
-                              <label for="top">Footer &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                              <label for="top">Footer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
                               <input class="input" id="form-one" type="text" placeholder="">
                             <small id="Top" class="text-muted">mm</small>
                             </div>
                             <div class="margin-field">
-                              <label for="top">Bottom &nbsp; &nbsp; &nbsp; &nbsp;</label>
+                              <label for="top">Bottom &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
                               <input class="input" id="form-one" type="text" placeholder="">
                             <small id="Top" class="text-muted">mm</small>
                             </div>
@@ -80,21 +83,21 @@
                            <div class="row">
                            <div class="watermark col-md-6 text-center">
                              <div class="display">
-                             <label for="top">Text &nbsp; &nbsp;</label>
+                             <label for="text">Text &nbsp; &nbsp; &nbsp; &nbsp;</label>
                              <input type="text" formControlName="text"  >
                              </div>
                              <div class="display">
-                             <label for="top">Font &nbsp; &nbsp;</label>
+                             <label for="font">Font &nbsp; &nbsp; &nbsp; </label>
                              <input type="text" formControlName="font">
                              </div>
                            </div>
                            <div class="watermark col-md-6 text-center">
                              <div class="display">
-                             <label for="top">Angle &nbsp;</label>
+                             <label for="angle">Angle &nbsp; &nbsp;</label>
                              <input type="text" formControlName="angle" >
                              </div>
                              <div class="file-upload-button display">
-                             <label for="top">Upload</label>
+                             <label for="upload">Upload &nbsp;</label>
                              <input type="submit" formControlName="upload" >
                              </div>
                            </div>
@@ -197,9 +200,13 @@
                       <button  type="button" class="btn delete-button">
                         <img class="p-1" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/garbage.png">
                       </button>
-                      <button class="reset-button " (click)="next()">
+                      <div>
+                    <img class="message-circle-image" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/Ellipse.png">
+                    <p>3</p>
+                    <button class="reset-button " (click)="next()">
                         <img class="p-1 m-2" src="https://raw.githubusercontent.com/skg1998/angular-hippodocs/master/src/asset/img/arrow.png">
                       </button>
+                    </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">

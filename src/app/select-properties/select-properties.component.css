@@ -87,7 +87,32 @@
   border-radius: 8px 0px;
   right: 0px;
   bottom: 0px;
+  z-index: 1;
 }
+
+.drop-button .message-circle-image{
+  position: absolute;
+  right: 50px;
+  bottom: 25px;
+  z-index: 2;
+}
+
+.drop-button p{
+    position: absolute;
+    margin: 0px;
+    right: 60px;
+    bottom: 31px;
+    z-index: 3;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4C3986;
+
+
+}
+
 
 .download-file h5{
   font-family: Lato;
@@ -130,10 +155,10 @@
   color: #ACABB1;
   
 }
-.margin-field{
+/* .margin-field{
   position: relative;
   float: right;
-}
+} */
 
 .main-margin-field .margin-field input{
   outline: 0;
@@ -259,8 +284,21 @@ hr{
   display: flex;
 }
 
+.display #margin-para{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  color: #4A4A4A;
+}
+
 .display img{
-  height: 15px;
+  margin-right: 5px;
+  height: 12px;
+}
+.display p{
+  color: #ACABB1;
 }
 
 .watermark input{
@@ -287,11 +325,11 @@ form{
   padding-bottom: 20px;
 }
 .main-col{
-  padding: 0px 25px;
+  padding: 0px 30px;
 }
 
 .main-col-2{
-  padding: 0px 25px;
+  padding: 0px 30px;
 }
 
 .main-col-2 .row{
@@ -300,4 +338,38 @@ form{
 
 .main-col .row{
   margin-bottom: 25px;
+}
+
+.document-img img{
+  height: 90px;
+}
+
+ .margin-selection{
+  position: relative;
+  display: flex;
+}
+.margin-selection img{
+  margin-right:5px;
+  height: 10px;
+  color: #4C3986;
+}
+
+.margin-selection p{
+  height: 12px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #4C3986;
+}
+
+#margin-unselection{
+  font-family: Lato;
+  height: 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  color: #4A4A4A;
 }

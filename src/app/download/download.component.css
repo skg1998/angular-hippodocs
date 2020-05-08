@@ -55,6 +55,7 @@
 
 .upload-button{
   background: #4C3986;
+  padding: 12px 20px;
   border-radius: 8px 0px;
   font-family: Lato;
   font-style: normal;
@@ -81,6 +82,32 @@
   border-radius: 8px 0px;
   right: 0px;
   bottom: 0px;
+  z-index: 1;
+}
+
+.drop-button .reset-button img{
+  margin-left: 3px;
+}
+
+.drop-button .message-circle-image{
+  position: absolute;
+  right: 50px;
+  bottom: 25px;
+  z-index: 2;
+}
+
+.drop-button p{
+    position: absolute;
+    margin: 0px;
+    right: 60px;
+    bottom: 31px;
+    z-index: 3;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4C3986;
 }
 
 .download-file h5{
@@ -123,3 +150,4 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
