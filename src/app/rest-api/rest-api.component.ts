@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-rest-api',
@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class RestApiComponent implements OnInit {
 
   constructor() { }
+  @Input() stepperAccess: any;
 
   ngOnInit() {
   }

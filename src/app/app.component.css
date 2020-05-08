@@ -11,14 +11,24 @@
   overflow: auto;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
   .banner {
     width: 100%;
-    height: auto;
     position: relative;
+    min-height: 280px;
   }
   .banner a {float: left;}
   div.content {margin-left: 0;}
+  .banner-middle .avatar{
+    width: 70px !important;
+  }
+  .banner .banner-bottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 10px 0 20px 0 !important;
+ }
+ .btn.logout-btn{width: 100%}
 }
 
 @media screen and (max-width: 400px) {
@@ -102,7 +112,6 @@
 
 
 #term{
-   font-family: Lato;
    font-style: normal;
    font-weight: normal;
    font-size: 10px;

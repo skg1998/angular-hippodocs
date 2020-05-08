@@ -25,7 +25,7 @@ export class StepperComponent implements OnInit {
     //   });
     //  }
 
-  private stepper: Stepper;
+  public stepper: Stepper;
 
   next() {
     this.stepper.next();

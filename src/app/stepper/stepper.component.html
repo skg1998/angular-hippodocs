@@ -27,19 +27,16 @@
         <form class="" (ngSubmit)="onSubmit()">
           <div id="test-l-1" class="content">
             <div class="form-group">
-              <app-file-upload></app-file-upload> 
+              <app-file-upload [stepperAccess]="stepper"></app-file-upload> 
             </div>
-            <button (click)="next()" class="btn btn-primary">Next</button>
           </div>
           <div id="test-l-2" class="content">
             <div class="form-group">
-              <app-select-properties></app-select-properties> 
+              <app-select-properties [stepperAccess]="stepper"></app-select-properties> 
             </div>
-            <button (click)="next()" class="btn btn-primary">Next</button>
           </div>
           <div id="test-l-3" class="content">
-            <app-download></app-download> 
-            <button type="submit" class="btn btn-primary mt-5">Submit</button>
+            <app-download [stepperAccess]="stepper"></app-download>
           </div>
         </form>
       </div>

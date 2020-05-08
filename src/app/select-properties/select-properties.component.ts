@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 import Stepper from 'bs-stepper';
@@ -20,28 +20,7 @@ export class SelectPropertiesComponent implements OnInit {
 
   constructor(private fb: FormBuilder) { };
 
-  private stepper: Stepper;
-
-  next() {
-    this.stepper.next();
-  }
-
-  // onSubmit() {
-  //   return false;
-  // }
-
-  // ngOnInit() {
-  //   this.stepper = new Stepper(document.querySelector('#stepper1'), {
-  //     linear: true,
-  //     animation: true,
-  //     selectors: {
-  //       steps: '.step',
-  //       trigger: '.step-trigger',
-  //       stepper: '.bs-stepper'
-  //     }
-   
-  //   })
-  // }
+  @Input() stepperAccess: any;
 
   ngOnInit(){};
 

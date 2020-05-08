@@ -112,3 +112,7 @@
 
 
 }
+
+.nav-item.nav-link.active{
+  color: #4C3986 !important;
+}
