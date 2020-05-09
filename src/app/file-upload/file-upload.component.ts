@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import $ from "jquery";
 
-
 @Component({
   selector: 'app-file-upload',
   templateUrl: './file-upload.component.html',
@@ -31,7 +30,6 @@ onRemove(event) {
 selectTab(selectedTab){
   $("#nav-tab").find("a").removeClass("active");
   $(`[href='${selectedTab}']`).addClass("active");
-
   $('#nav-tabContent').find('[role="tabpanel"]').removeClass("active").removeClass("show")
   $(selectedTab).addClass("active").addClass("show")
 

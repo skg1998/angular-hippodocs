@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import Stepper from 'bs-stepper';
-// import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
-
-
 
 @Component({
   selector: 'app-stepper',
@@ -14,27 +11,11 @@ export class StepperComponent implements OnInit {
 
   smallScreen: boolean;
 
-    // constructor(
-    //    private breakpointObserver: BreakpointObserver
-    //   ) {
-    //     breakpointObserver.observe([
-    //       Breakpoints.XSmall,
-    //       Breakpoints.Small
-    //     ]).subscribe(result => {
-    //       this.smallScreen = result.matches;
-    //   });
-    //  }
+   constructor() { }
 
   public stepper: Stepper;
 
-  next() {
-    this.stepper.next();
-  }
-
-  onSubmit() {
-    return false;
-  }
-
+  
   ngOnInit() {
     this.stepper = new Stepper(document.querySelector('#stepper1'), {
       linear: true,
@@ -47,5 +28,14 @@ export class StepperComponent implements OnInit {
    
     })
   }
+
+  next() {
+    this.stepper.next();
+  }
+
+  onSubmit() {
+    return false;
+  }
+
 
 }

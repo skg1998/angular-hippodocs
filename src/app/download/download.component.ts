@@ -7,8 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DownloadComponent implements OnInit {
 
-  constructor() { }
   @Input() stepperAccess: any;
+  constructor() { }
+  
 
   ngOnInit() {
   }

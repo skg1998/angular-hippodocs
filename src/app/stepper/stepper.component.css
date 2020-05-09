@@ -37,10 +37,18 @@
 
 .active .bs-stepper-circle {
     background-color: #43d813;
+    
+}
+
+.bs-stepper-circle{
+    width: 24px;
+    height: 24px;
+    padding: 4px;
 }
 
 .step-trigger .line{
   color: #43d813;
+  width: 2px;
 }
 @media screen and (max-width: 767px) {
  .bs-stepper.vertical .bs-stepper-header{

@@ -11,8 +11,9 @@
     border: 1px solid transparent;
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-     color: #eee; 
-    font-size: 20px;
+    color: #eee; 
+    font-size: 16px;
+    line-height: 19px
 }
 
 #term{
@@ -45,7 +46,6 @@
 
 
 .main-part{
-  /* height: 350px; */
   background: #E8F2F7;
   border-radius: 8px;
 }
@@ -155,10 +155,6 @@
   color: #ACABB1;
   
 }
-/* .margin-field{
-  position: relative;
-  float: right;
-} */
 
 .main-margin-field .margin-field input{
   outline: 0;
@@ -221,14 +217,6 @@ hr{
   line-height: 12px;
   color: #ACABB1;
 } 
-
-/* .encrypt-password hr{
-  margin-top: 2px;
-  width: 260px;
-  height: 1px;
-  background: #ACABB1;
-  border-radius: 5px;
-} */
 
 .encrypt-password input{
   width: 100%;
@@ -372,4 +360,9 @@ form{
   font-size: 10px;
   line-height: 12px;
   color: #4A4A4A;
+}
+
+.nav-item.nav-link.active.nav-home{
+  color: #4C3986 !important;
+
 }

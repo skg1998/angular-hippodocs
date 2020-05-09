@@ -1,7 +1,7 @@
 #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #f3f3f3;
-     background-color: transparent; 
-     border-color: transparent transparent #f3f3f3; 
+    background-color: transparent; 
+    border-color: transparent transparent #f3f3f3; 
     border-bottom: 4px solid !important;
     font-size: 20px;
     font-weight: bold;
@@ -11,7 +11,12 @@
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
      color: #eee; 
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.nav-item.nav-link.active.nav-home{
+  color: #4C3986 !important;
 }
 
 #term{
