@@ -10,9 +10,13 @@
     border: 1px solid transparent;
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-     color: #eee; 
+    color: #ACABB1;
     font-size: 16px;
     line-height: 19px;
+}
+
+#tabs .nav-tabs .nav-link.nav-profile{
+  border-bottom: 1px !important;
 }
 
 .nav-item.nav-link.active.nav-home{
